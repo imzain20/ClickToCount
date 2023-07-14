@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showToast(view: View) {
-        Toast.makeText(this, "Raised a Toast", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Happy Counting!", Toast.LENGTH_SHORT).show()
     }
     fun countUp(view: View) {
 
@@ -27,5 +27,11 @@ class MainActivity : AppCompatActivity() {
             show_count.setText(Integer.toString(count))
         }
 
+    }
+
+    fun reset(view: View)
+    {
+        count=0;
+        show_count.setText(Integer.toString(count))
     }
 }
