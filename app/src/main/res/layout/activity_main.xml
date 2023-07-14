@@ -21,11 +21,13 @@
     <Button
         android:id="@+id/button_count"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:backgroundTint="@android:color/holo_purple"
         android:onClick="countUp"
         android:text="COUNT"
         android:textColor="@android:color/black"
+        app:layout_constraintWidth_percent="0.99"
+        app:layout_constraintHeight_percent="0.12"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
